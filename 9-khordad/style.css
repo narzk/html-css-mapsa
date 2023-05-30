@@ -7,18 +7,15 @@
   --gray-soft: hsl(210, 46%, 95%);
 }
 
-
 /* container */
-.container{
-    display: grid;
-    gap:16px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: 'one one two three'
-                        'four five five three'
-    ;
-    /* grid-template-columns: repeat(4,1fr); */
-
-
+.container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "one one two three"
+    "four five five three";
+  /* grid-template-columns: repeat(4,1fr); */
 }
 
 /* card style */
@@ -52,50 +49,50 @@
 /* first card style */
 
 .card.first-card {
-    background-color: var(--violet);
-    color: var(--white);
-    background-image: url(./assets/pattern.svg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    /* grid-column: 1/3; */
+  background-color: var(--violet);
+  color: var(--white);
+  background-image: url(./assets/pattern.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
 
-    grid-area: one;
-  }
+  /* grid-column: 1/3; */
 
-  /* second card style */
+  grid-area: one;
+  border-right: 19px solid transparent;
+  border-top: 10px solid transparent;
+}
 
-  .card.second-card {
-    background-color: var(--blue);
-    color: var(--white);
-    grid-area: two;
+/* second card style */
 
-  }
-  
-  /* third card style */
+.card.second-card {
+  background-color: var(--blue);
+  color: var(--white);
+  grid-area: two;
+}
 
-  .card.third-card {
-    background-color: var(--white);
-    color: var(--blue);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* grid-row: 2 span; */
-    grid-area: three;
-  
+/* third card style */
+
+.card.third-card {
+  background-color: var(--white);
+  color: var(--blue);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* grid-row: 2 span; */
+  grid-area: three;
 }
 
 /* forth card style */
 
-  .card.forth-card {
-    background-color: var(--white);
-    color: var(--blue);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    grid-area: four;
-  
+.card.forth-card {
+  background-color: var(--white);
+  color: var(--blue);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: four;
 }
 
-  .card.fifth-card {
-    background-color: var(--blue-hard);
-    color: var(--white);
-    grid-area: five;
-   
-    /* grid-column: 2/4; */
-  }
+.card.fifth-card {
+  background-color: var(--blue-hard);
+  color: var(--white);
+  grid-area: five;
+
+  /* grid-column: 2/4; */
+}
