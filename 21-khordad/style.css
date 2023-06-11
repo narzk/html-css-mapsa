@@ -1,0 +1,152 @@
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* page  */
+
+.page {
+  height: 100vh;
+}
+.page-header {
+  color: var(--Dark-Grayish-Blue);
+}
+.page-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-description {
+  color: var(--Grayish-Blue);
+  max-width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* first-page */
+
+.page-first {
+  background-image: url(./assets/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+button {
+  border: none;
+  padding: 16px 32px;
+  border-radius: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+.button-primary {
+  background-color: var(--Strong-Cyan);
+  margin-right: 16px;
+}
+.button-secondary {
+  background-color: var(--Light-Blue);
+}
+
+/* second-page */
+
+.page-second-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 32px;
+}
+.page-second-image {
+  margin-left: -202px;
+  height: 500px;
+  width: 700px;
+}
+
+.page-second-item {
+  padding: 16px;
+}
+
+/* page-third */
+.page-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* page-fourth */
+.page-forth{
+    height: 80vh;
+}
+.page-fourth-contents {
+  display: flex;
+  justify-content: space-around;
+}
+.page-fourth-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 16px 0;
+}
+.page-fourth-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.page-fourth-logos img {
+  height: 35px;
+  margin-right: 130px;
+}
+.page-fourth-logos>:last-child {
+  margin-right: 0;
+}
+/* page-fifth */
+.page-fifth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    position: relative;
+}
+.footer{
+    height: 108px;
+    background-color: var(--Grayish-Blue);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+.footer-content span{
+    color: var(--Dark-Grayish-Blue);
+    margin:  8px;
+
+}
+.footer-logos{
+    display: flex;
+    align-items: center;
+    
+}
+.footer-logos img{
+ margin:8px;   
+}
