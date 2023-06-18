@@ -1,0 +1,40 @@
+/* - Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */
+
+:root {
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Light-Blue:hsl(207, 26%, 17%);
+  
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+  }
+.header{
+    height:48px;
+    padding: 0 16px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap:16px;
+}
+.flag-card{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.flag-description{
+    padding: 8px;
+}
+.flag-description-item>:first-child{
+    font-weight: 700;
+}
